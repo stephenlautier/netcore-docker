@@ -5,7 +5,7 @@ This can be used for CI such as CircleCI 2 or so, in order to launch a container
 
 ## Features
 
- - extends `microsoft/aspnetcore-build:1.0-1.1`
+ - extends `microsoft/aspnetcore-build:2.0`
  - docker-ce pre-installed
  - docker-compose pre-installed
 

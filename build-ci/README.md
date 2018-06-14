@@ -6,7 +6,7 @@ This can be used for CI such as CircleCI 2 or so, in order to launch a container
 ## Features
 
  - extends `microsoft/dotnet:2.1-sdk`
- - `docker-ce` v17.12-ce pre-installed
+ - `docker-ce` v18.03.1-ce pre-installed
  - `docker-compose` v1.21.2 pre-installed
  - `nodejs` v10.4.1 - `npm` v6.1.0
 

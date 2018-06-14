@@ -1,5 +1,6 @@
-FROM microsoft/aspnetcore-build:1.0-2.0
- 
+FROM microsoft/dotnet:2.1-sdk
+
+USER root
 RUN apt-get update
 RUN apt-get install apt-transport-https ca-certificates curl gnupg2 bzip2 libfontconfig software-properties-common -y
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
@@ -9,13 +10,16 @@ RUN add-apt-repository \
    stable"
 RUN apt-get update
 RUN apt-get install docker-ce -y
-RUN apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*
-RUN curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-RUN sudo chmod +x /usr/local/bin/docker-compose
+RUN curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+RUN chmod +x /usr/local/bin/docker-compose
 
-RUN npm i -g phantomjs-prebuilt node-sass n
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install -y nodejs npm
+
+RUN npm i phantomjs-prebuilt node-sass n
+
 # RUN n latest
-RUN n 9.4
+# RUN n 10.4.1
 RUN npm rebuild node-sass
 
 RUN echo node version: $(node -v)

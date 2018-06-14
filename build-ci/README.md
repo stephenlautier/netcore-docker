@@ -5,10 +5,10 @@ This can be used for CI such as CircleCI 2 or so, in order to launch a container
 
 ## Features
 
- - extends `microsoft/aspnetcore-build:2.0`
+ - extends `microsoft/dotnet:2.1-sdk`
  - `docker-ce` v17.12-ce pre-installed
- - `docker-compose` v1.19.0 pre-installed
- - `nodejs` v9.4 - `npm` v5.6.0
+ - `docker-compose` v1.21.2 pre-installed
+ - `nodejs` v10.4.1 - `npm` v6.1.0
 
 ## Deploy
 

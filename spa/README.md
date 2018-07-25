@@ -1,12 +1,12 @@
-# netcore2 docker spa
+# netcore 2.1 docker spa
 Image for .netcore with node pre-installed.
 
 This can be used for JavaScriptServices.
 
 ## Features
 
- - extends `microsoft/aspnetcore:2.0`
- - node v8 preinstalled
+ - extends `microsoft/dotnet:2.1-aspnetcore-runtime`
+ - node v10.x preinstalled
 
 ## Deploy
 

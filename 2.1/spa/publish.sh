@@ -1,3 +1,6 @@
 VERSION=2.1.0
-docker build -t stephenlautier/netcore-docker-spa:${VERSION} .
-docker push stephenlautier/netcore-docker-spa:${VERSION}
+IMAGE=stephenlautier/netcore-docker-spa:${VERSION}
+echo "Building + pushing image '${IMAGE}'"
+
+docker build -t ${IMAGE} .
+docker push ${IMAGE}

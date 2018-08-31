@@ -1,3 +1,6 @@
 VERSION=2.1.0
-docker build -t stephenlautier/netcore-docker-ci:${VERSION} .
-docker push stephenlautier/netcore-docker-ci:${VERSION}
+IMAGE=stephenlautier/netcore-docker-ci:${VERSION}
+echo "Building + pushing image '${IMAGE}'"
+
+docker build -t ${IMAGE} .
+docker push ${IMAGE}

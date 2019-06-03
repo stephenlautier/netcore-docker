@@ -6,7 +6,7 @@ This can be used for JavaScriptServices.
 ## Features
 
  - extends `microsoft/2.2.1-aspnetcore-runtime`
- - node v10.x preinstalled
+ - node v11.x preinstalled
 
 ## Deploy
 

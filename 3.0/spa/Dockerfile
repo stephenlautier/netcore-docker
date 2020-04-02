@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-buster-slim
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim
 
 RUN apt-get update && apt-get install -y sudo gnupg2 gnupg gnupg1 && rm -rf /var/lib/apt/lists/*
 RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -

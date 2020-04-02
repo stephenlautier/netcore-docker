@@ -5,7 +5,7 @@ This can be used for CI such as CircleCI 2 or so, in order to launch a container
 
 ## Features
 
- - extends `mcr.microsoft.com/dotnet/core/sdk:3.0`
+ - extends `mcr.microsoft.com/dotnet/core/sdk:3.1-buster`
  - `docker-ce` v19.03.4-ce pre-installed
  - `docker-compose` v1.21.2 pre-installed
  - `nodejs` v13.0.1 - `npm` v6.12.0

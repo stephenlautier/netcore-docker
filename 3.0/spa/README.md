@@ -1,11 +1,11 @@
-# netcore 3.0 docker spa
+# netcore 3.1 docker spa
 Image for .netcore with node pre-installed.
 
 This can be used for JavaScriptServices.
 
 ## Features
 
- - extends `mcr.microsoft.com/dotnet/core/aspnet:3.0-buster-slim`
+ - extends `mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim`
  - node v13.x preinstalled
 
 ## Deploy

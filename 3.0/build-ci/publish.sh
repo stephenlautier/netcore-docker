@@ -1,4 +1,4 @@
-VERSION=3.0.1
+VERSION=3.1.3
 IMAGE=stephenlautier/netcore-docker-ci:${VERSION}
 echo "Building + pushing image '${IMAGE}'"
 

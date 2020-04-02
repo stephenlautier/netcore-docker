@@ -1,4 +1,4 @@
-VERSION=3.0.0
+VERSION=3.1.3
 IMAGE=stephenlautier/netcore-docker-spa:${VERSION}
 echo "Building + pushing image '${IMAGE}'"
 

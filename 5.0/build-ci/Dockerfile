@@ -9,7 +9,7 @@ RUN add-apt-repository \
    $(lsb_release -cs) \
    stable"
 RUN apt-get update
-RUN apt-get install docker-ce -y
+RUN apt-get install -y docker-ce openssh-client git
 RUN curl -L https://github.com/docker/compose/releases/download/1.26.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
 

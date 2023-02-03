@@ -1,4 +1,7 @@
 # Docker for .NET Core
+### 7.0
+ - [Build CI](./7.0/build-ci/README.md) - .NET Core image with tooling e.g. for CircleCI 2.
+ - [SPA](./7.0/spa/README.md) - .NET Core with Nodejs runtime
 
 ### 6.0
  - [Build CI](./6.0/build-ci/README.md) - .NET Core image with tooling e.g. for CircleCI 2.
